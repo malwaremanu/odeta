@@ -1,9 +1,13 @@
 # setup.py
 from setuptools import setup, find_packages
 
+# Read the version number from version.py
+with open("version.py") as f:
+    exec(f.read())
+
 setup(
     name="odeta",
-    version="0.1.2",
+    version=__version__,
     author="Manupal Choudhary",
     author_email="tech.manujpr@gmail.com",
     description="A simple NoSQL-like interface for SQLite",
