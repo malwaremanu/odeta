@@ -1,3 +1,19 @@
+Metadata-Version: 2.1
+Name: odeta
+Version: 0.1.2
+Summary: A simple NoSQL-like interface for SQLite
+Home-page: https://github.com/malwaremanu/odeta
+Author: Manupal Choudhary
+Author-email: tech.manujpr@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
 # Odeta
 
 A simple NoSQL-like interface for SQLite.
@@ -54,3 +70,5 @@ users.update({"name": "Alice Johnson", "age": 31}, new_user_id)
 ```
 users.delete(new_user_id)
 ```
+
+
