@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: odeta
-Version: 0.1.13
+Version: 0.1.20
 Summary: A simple NoSQL-like interface for SQLite
 Home-page: https://github.com/malwaremanu/odeta
 Author: Manupal Choudhary

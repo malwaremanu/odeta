@@ -1,15 +1,8 @@
-# #!/bin/bash
-# # pypi-AgEIcHlwaS5vcmcCJGJmNTU1ZTYwLWY2NjUtNGI5NS05OGYyLWEwNmFmMGE0ZTdkYgACKlszLCIyNjBmZTU0Yi00NmViLTQ2NGYtOTk5NS01YjMyZDIyNTQ0YjYiXQAABiCCLRsCtsrMNrnNhC77EMuFm124XviseV5sJd0hknqOswm
-# rm -rf dist
-# rm -rf build
-
-# # Build the distribution
-# python3 setup.py sdist bdist_wheel
-
-# # Upload the distribution
-# twine upload dist/* --verbose
-
 #!/bin/bash
+
+#pypi-AgEIcHlwaS5vcmcCJDRhZTBhNDE5LWU3OGYtNDBkZi04NjQxLWEzZmRlMWNhZjA5NwACDVsxLFsib2RldGEiXV0AAixbMixbImVhODQyMzIzLTIwZWEtNGU5OS1iMzExLTI0ZDcxMDI3NDAyYSJdXQAABiDkrm1-DhaqOoJt5qQ2MUWoPFvVmqXIMPNx_-L8_d941A
+rm -rf build
+rm -rf dist
 
 # Increment the version number
 current_version=$(grep -oP '(?<=__version__ = ")[^"]*' version.py)
@@ -26,7 +19,7 @@ sed -i "s/__version__ = \"[^\"]*\"/__version__ = \"$new_version\"/" version.py
 python3 setup.py sdist bdist_wheel
 
 # Upload the distribution
-twine upload dist/*
+twine upload dist/* --verbose
 
 # Commit the version change
 # git add version.py
