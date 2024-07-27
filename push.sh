@@ -1,8 +1,12 @@
 #!/bin/bash
 
-#pypi-AgEIcHlwaS5vcmcCJDRhZTBhNDE5LWU3OGYtNDBkZi04NjQxLWEzZmRlMWNhZjA5NwACDVsxLFsib2RldGEiXV0AAixbMixbImVhODQyMzIzLTIwZWEtNGU5OS1iMzExLTI0ZDcxMDI3NDAyYSJdXQAABiDkrm1-DhaqOoJt5qQ2MUWoPFvVmqXIMPNx_-L8_d941A
+# 01J3SVPPGXFAXTZATSQD5F7Z1C
+# -AgEIcHlwaS5vcmcCJGE5ZDkxNDUzLWYzZWMtNDdlMy1hOGM3LTNhZjNlNjc1N2EzMgACDVsxLFsib2RldGEiXV0AAixbMixbImVhODQyMzIzLTIwZWEtNGU5OS1iMzExLTI0ZDcxMDI3NDAyYSJdXQAABiDqSrKlJd7auHnVYevz384RDRCqOUIYNaKn5zy86qm1ig
+
 rm -rf build
 rm -rf dist
+
+python3 ./increment_version.py
 
 # Increment the version number
 current_version=$(grep -oP '(?<=__version__ = ")[^"]*' version.py)
